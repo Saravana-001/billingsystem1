@@ -37,4 +37,23 @@ System.out.println("---------------------------------");
 System.out.println("Total Amount: $" + totalAmount);
 System.out.println("Thank you for shopping with us!");
 
+#Bill generation part in Python
+if selected_items:
+    print("\nBill Summary:")
+    item_counter = Counter([item.get_name() for item in selected_items])
+    total_amount = 0
+
+    print(f"{'Item':<25}{'Quantity':<10}{'Price':<10}{'Total':<10}")
+    print("-" * 55)
+    
+    for item_name, quantity in item_counter.items():
+        item_price = next(item.get_price() for item in selected_items if item.get_name() == item_name)
+        item_total = item_price * quantity
+        total_amount += item_total
+        print(f"{item_name:<25}{quantity:<10}{item_price:<10}{item_total:<10}")
+    
+    print("-" * 55)
+    print(f"{'Total Amount':<45}{total_amount:<10}")
+else:
+    print("\nYour cart is empty.")
 
