@@ -2,12 +2,6 @@
 
 This project implements a simple billing system using two programming languages: Java and Python. The billing system allows users to select items from various sections (e.g., Mobiles, Fashion, Electronics) and generates a bill based on the selected items.
 
-## Table of Contents
-- [Features](#features)
-- [Java Implementation](#java-implementation)
-- [Python Implementation](#python-implementation)
-- [How to Run](#how-to-run)
-- [Future Enhancements](#future-enhancements)
 
 ## Features
 - **Multiple Sections**: Users can choose items from different sections like Mobiles, Fashion, Watches, Appliances, and more.
