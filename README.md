@@ -14,6 +14,7 @@ This project implements a simple billing system using two programming languages:
 - **Item Selection**: Users can add items to their cart by selecting them from a list.
 - **Bill Generation**: The system generates a bill that includes item details, quantities, and the total amount.
 
+
 ## Python Implementation
 
 The Python version of the billing system is implemented using object-oriented programming concepts. It includes a `Section` class to represent different sections and an `Item` class to represent individual items. 
@@ -43,3 +44,29 @@ if selected_items:
     print(f"{'Total Amount':<45}{total_amount:<10}")
 else:
     print("\nYour cart is empty.")
+
+
+
+
+# Java Implementation
+
+The Java version of the billing system is implemented using classes and objects. It features a `Section` class to represent different sections and an `Item` class to represent individual items.
+
+### Key Classes
+- **Item**: Represents an item with a name and price.
+- **Section**: Represents a section containing a list of items.
+
+### Bill Generation
+```java
+// Bill generation part in Java
+double totalAmount = 0.0;
+System.out.println("\nGenerating Bill... Please wait");
+System.out.println("------------------");
+System.out.println("Items Purchased:");
+for (Item item : selectedItems) {
+    System.out.println(item.getName() + "\t $" + item.getPrice());
+    totalAmount += item.getPrice();
+}
+System.out.println("---------------------------------");
+System.out.println("Total Amount: $" + totalAmount);
+System.out.println("Thank you for shopping with us!");
