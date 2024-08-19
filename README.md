@@ -37,6 +37,7 @@ System.out.println("---------------------------------");
 System.out.println("Total Amount: $" + totalAmount);
 System.out.println("Thank you for shopping with us!");
 
+## Python Implementation
 #Bill generation part in Python
 if selected_items:
     print("\nBill Summary:")
