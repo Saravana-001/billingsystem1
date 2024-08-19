@@ -46,16 +46,6 @@ else:
     print("\nYour cart is empty.")
 
 
-
-
-# Java Implementation
-
-The Java version of the billing system is implemented using classes and objects. It features a `Section` class to represent different sections and an `Item` class to represent individual items.
-
-### Key Classes
-- **Item**: Represents an item with a name and price.
-- **Section**: Represents a section containing a list of items.
-
 ### Bill Generation
 ```java
 // Bill generation part in Java
